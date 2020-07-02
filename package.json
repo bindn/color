@@ -15,7 +15,7 @@
   "files": [
     "README.md",
     "LICENSE",
-    "dist/*"
+    "dist/index.js"
   ],
   "scripts": {
     "start": "sirv sample/dist",

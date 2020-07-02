@@ -1,8 +1,22 @@
 {
   "name": "@bindn/color",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Color models for Hex, RGB and Names and mappings between the models",
-  "main": "index.js",
+  "author": "Claire Knutson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bindn/color/issues"
+  },
+  "homepage": "https://github.com/bindn/color#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bindn/color.git"
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "dist/*"
+  ],
   "scripts": {
     "start": "sirv sample/dist",
     "build": "rollup -c",
@@ -11,21 +25,16 @@
     "autobuild": "rollup -c -w",
     "start-server": "npm start",
     "e2e": "jest tests --no-cache",
+    "test": "test:unit",
     "test:unit": "jest src",
     "test:e2e": "start-server-and-test start-server http://localhost:5000 e2e",
     "test:coverage": "jest src --coverage"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "browser": "dist/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bindn/color.git"
-  },
-  "author": "Stargaze Solutions",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bindn/color/issues"
-  },
-  "homepage": "https://github.com/bindn/color#readme",
+  "main": "index.js",
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",

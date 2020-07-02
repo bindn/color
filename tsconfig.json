@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es2015",                        
+    "module": "es6",                           
+    "declaration": false,                    
+    "outDir": "./dist",               
+    "rootDir": ".",                          
+    "removeComments": true,            
+    "downlevelIteration": true,                
+    "noEmitOnError": true,
+    "strict": true,
+    "noUnusedLocals": true,              
+    "noUnusedParameters": true,           
+    "noImplicitReturns": true,                
+    "noFallthroughCasesInSwitch": true,     
+    "allowSyntheticDefaultImports": true,     
+    "forceConsistentCasingInFileNames": true, 
+    "skipLibCheck": true,
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*", "tests/**/*"],
+  "exclude": ["node_modules"]
+}

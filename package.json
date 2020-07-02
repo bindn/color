@@ -1,0 +1,56 @@
+{
+  "name": "@bindn/color",
+  "version": "0.0.1",
+  "description": "Color models for Hex, RGB and Names and mappings between the models",
+  "main": "index.js",
+  "scripts": {
+    "start": "sirv sample/dist",
+    "build": "rollup -c",
+    "dev": "run-p start:dev autobuild",
+    "start:dev": "sirv sample/dist --single --dev",
+    "autobuild": "rollup -c -w",
+    "start-server": "npm start",
+    "e2e": "jest tests --no-cache",
+    "test:unit": "jest src",
+    "test:e2e": "start-server-and-test start-server http://localhost:5000 e2e",
+    "test:coverage": "jest src --coverage"
+  },
+  "browser": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bindn/color.git"
+  },
+  "author": "Stargaze Solutions",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bindn/color/issues"
+  },
+  "homepage": "https://github.com/bindn/color#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-typescript": "^7.9.0",
+    "@rollup/plugin-commonjs": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.1",
+    "@types/jest": "^26.0.0",
+    "@typescript-eslint/eslint-plugin": "^3.2.0",
+    "@typescript-eslint/parser": "^3.2.0",
+    "babel-jest": "^26.0.0",
+    "eslint": "^7.2.0",
+    "jest": "^26.0.1",
+    "jest-theories": "^1.2.0",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.16.1",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "sirv-cli": "^1.0.0",
+    "start-server-and-test": "^1.11.0",
+    "svelte": "^3.0.0",
+    "svelte-preprocess": "^3.4.0",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {}
+}

@@ -30,9 +30,6 @@
     "test:e2e": "start-server-and-test start-server http://localhost:5000 e2e",
     "test:coverage": "jest src --coverage"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "browser": "dist/index.js",
   "main": "index.js",
   "devDependencies": {
